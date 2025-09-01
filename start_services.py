@@ -225,21 +225,21 @@ def main():
                       help='Environment to use for Docker Compose (default: private)')
     args = parser.parse_args()
 
-    clone_supabase_repo()
-    prepare_supabase_env()
+    # clone_supabase_repo()
+    # prepare_supabase_env()
     
-    # Generate SearXNG secret key and check docker-compose.yml
-    generate_searxng_secret_key()
-    check_and_fix_docker_compose_for_searxng()
+    # # Generate SearXNG secret key and check docker-compose.yml
+    # generate_searxng_secret_key()
+    # check_and_fix_docker_compose_for_searxng()
     
     stop_existing_containers(args.profile)
     
     # Start Supabase first
-    start_supabase(args.environment)
+    # start_supabase(args.environment)
     
     # Give Supabase some time to initialize
-    print("Waiting for Supabase to initialize...")
-    time.sleep(10)
+    # print("Waiting for Supabase to initialize...")
+    # time.sleep(10)
     
     # Then start the local AI services
     start_local_ai(args.profile, args.environment)

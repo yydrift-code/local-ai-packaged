@@ -1,9 +1,9 @@
 services:
-  analytics:
-    ports: !reset null
+  # analytics:
+  #   ports: !reset null
 
-  kong:
-    ports: !reset null
+  # kong:
+  #   ports: !reset null
 
-  supavisor:
-    ports: !reset null
+  # supavisor:
+  #   ports: !reset null

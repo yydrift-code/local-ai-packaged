@@ -1,7 +1,7 @@
 services:
-  flowise:
-    ports:
-      - 127.0.0.1:3001:3001
+  # flowise:
+  #   ports:
+  #     - 127.0.0.1:3001:3001
 
   open-webui:
     ports:
@@ -41,17 +41,17 @@ services:
   #     - 127.0.0.1:9010:9000
   #     - 127.0.0.1:9011:9001
 
-  postgres:
-    ports:
-      - 127.0.0.1:5433:5432                
+  # postgres:
+  #   ports:
+  #     - 127.0.0.1:5433:5432                
 
-  redis:
-    ports:
-      - 127.0.0.1:6379:6379
+  # redis:
+  #   ports:
+  #     - 127.0.0.1:6379:6379
 
-  searxng:
-    ports:
-      - 127.0.0.1:8081:8080
+  # searxng:
+  #   ports:
+  #     - 127.0.0.1:8081:8080
 
   ollama-cpu:
     ports:
